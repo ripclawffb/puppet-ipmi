@@ -32,8 +32,8 @@ Description
 
 Installs the [OpemIPMI](http://openipmi.sourceforge.net/) package,
 provides IPMI facts in a format compatible with
-[The Foreman](www.theforeman.org)'s
-[BMC features](www.theforeman.org/manuals/latest/index.html#4.3.3BMC)
+[The Foreman](https://www.theforeman.org)'s
+[BMC features](https://www.theforeman.org/manuals/latest/index.html#4.3.3BMC)
 and enables the `ipmi` service. The latter loads the kernel drivers
 needed for communicating with the BMC from user space.
 
@@ -266,7 +266,9 @@ ipmi_subnet_mask => 255.255.255.0
 Limitations
 -----------
 
-At present, only support for `$::osfamily == 'RedHat'` has been implimented.
+At present, only support for RedHat and Debian distributions
+has been implemented.
+
 Adding other Linux distrubtions should be trivial.
 
 ### Tested Platforms
@@ -274,6 +276,8 @@ Adding other Linux distrubtions should be trivial.
 * el5.x
 * el6.x
 * el7.x
+* Debian
+* Ubuntu
 
 ### Puppet Version Compatibility
 
